@@ -1,0 +1,10 @@
+.caution p {
+    text-align: end;
+    margin-top: 15px;
+    padding-right: 10%;
+}
+
+.caution p::before {
+    content: "*";
+    color: red;
+}

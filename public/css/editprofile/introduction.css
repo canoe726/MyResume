@@ -1,0 +1,43 @@
+.introduction h2::before {
+    content: "*";
+    color: red;
+}
+
+.introduction .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.introduction .row .left {
+    width: 100%;
+    float: left;
+    text-align: start;
+}
+
+.introduction .row .left h2 {
+    width: 100%;
+    margin: 0;
+}
+
+.introduction .row .right {
+    width: 100%;
+    float: right;
+    text-align: end;
+    font-size: small;
+    margin-top: auto;
+}
+
+.introduction .row .right p {
+    width: 100%;
+}
+
+.introduction div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction textarea {
+    width: 100%;
+    margin: 0;
+}

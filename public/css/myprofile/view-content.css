@@ -1,0 +1,34 @@
+.title h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.view-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.view-content .row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-content .row p {
+    margin: 0;
+}
+
+.view-content .row p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.view-content .row span {
+    margin-right: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fa-window-maximize  {
+    color: lightblue;
+}

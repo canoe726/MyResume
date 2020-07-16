@@ -1,0 +1,21 @@
+.keywords .keyword {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.keywords .tag-btn {
+    border: 3px solid lightgray;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px;
+    font-size: small;
+}
+
+.keywords .tag-btn:hover {
+    background-color: lightgray;
+    color: white;
+}

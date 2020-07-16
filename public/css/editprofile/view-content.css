@@ -1,0 +1,47 @@
+.title .caption {
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title div {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title input {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.view-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.view-content .row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-content .row p {
+    margin: 0;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.view-content .row span {
+    margin-right: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fa-window-maximize  {
+    color: lightblue;
+}
