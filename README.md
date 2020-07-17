@@ -20,18 +20,18 @@
 <div>
   <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752506-7cc2fa80-c83b-11ea-88ce-9cf6d80aaa15.PNG">
   &nbsp;&nbsp;&nbsp;
-  <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752510-7df42780-c83b-11ea-85d1-b379540a4541.PNG">
-</div>
-
-> 왼쪽부터 메인 페이지, 회원가입 페이지
-
-<div>
-  <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752505-7cc2fa80-c83b-11ea-9a42-57d3cff61c9c.PNG">
-  &nbsp;&nbsp;&nbsp;
   <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752503-7c2a6400-c83b-11ea-939b-f476ee1d4ff0.PNG">
 </div>
 
-> 왼쪽부터 로그인 페이지, 내 프로필 페이지
+> 왼쪽부터 메인 페이지, 내 프로필 페이지
+
+<div>
+  <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752510-7df42780-c83b-11ea-85d1-b379540a4541.PNG">
+  &nbsp;&nbsp;&nbsp;
+  <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752505-7cc2fa80-c83b-11ea-9a42-57d3cff61c9c.PNG">
+</div>
+
+> 왼쪽부터 회원가입 페이지, 로그인 페이지
 
 <div>
   <img width="45%" src="https://user-images.githubusercontent.com/36183001/87752508-7df42780-c83b-11ea-8aab-6e08968dc4c2.PNG">
