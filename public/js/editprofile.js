@@ -3,6 +3,16 @@ window.onscroll = function() {
   stickyFunc();
 };
 
+// redirect confirm
+function redirectConfirm(element) {
+  var move = window.confirm("저장하지 않고 페이지를 이동하시겠습니까?");
+  if(move) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // scroll to top
 var btnTop = document.getElementById("scroll-top");
 

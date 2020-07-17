@@ -26,9 +26,9 @@ router.get('/', function(request, response) {
         var sql1 = `SELECT * FROM user_info WHERE id = ?;`;
         var sql2 = `SELECT * FROM user_high_school WHERE id = ?;`;
         var sql3 = `SELECT * FROM user_university WHERE id = ?;`;
-        var sql4 = `SELECT * FROM user_job_exp WHERE id = ?;`;
-        var sql5 = `SELECT * FROM user_global_exp WHERE id = ?;`;
-        var sql6 = `SELECT * FROM user_other_exp WHERE id = ?;`;
+        var sql4 = `SELECT * FROM user_job_exp WHERE id = ? ORDER BY start_date ASC;`;
+        var sql5 = `SELECT * FROM user_global_exp WHERE id = ? ORDER BY start_date ASC;`;
+        var sql6 = `SELECT * FROM user_other_exp WHERE id = ? ORDER BY start_date ASC;`;
         var sql7 = `SELECT * FROM user_certificate WHERE id = ?;`;
         var sql8 = `SELECT * FROM user_prize WHERE id = ?;`;
         var sql9 = `SELECT * FROM user_work_portfolio WHERE id = ?;`;
@@ -129,8 +129,6 @@ router.get('/', function(request, response) {
 
                 Object.assign(data, {'job_exp':sql4_result});
             }
-
-            //console.log(data.job_exp);
 
             /** USER_GLOBAL_EXP */
             var sql5_result;

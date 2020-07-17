@@ -26,9 +26,9 @@ router.get('/', function(request, response) {
         var sql1 = `SELECT * FROM user_info WHERE id = ?;`;
         var sql2 = `SELECT * FROM user_high_school WHERE id = ?;`;
         var sql3 = `SELECT * FROM user_university WHERE id = ?;`;
-        var sql4 = `SELECT * FROM user_job_exp WHERE id = ?;`;
-        var sql5 = `SELECT * FROM user_global_exp WHERE id = ?;`;
-        var sql6 = `SELECT * FROM user_other_exp WHERE id = ?;`;
+        var sql4 = `SELECT * FROM user_job_exp WHERE id = ? ORDER BY start_date ASC;`;
+        var sql5 = `SELECT * FROM user_global_exp WHERE id = ? ORDER BY start_date ASC;`;
+        var sql6 = `SELECT * FROM user_other_exp WHERE id = ? ORDER BY start_date ASC;`;
         var sql7 = `SELECT * FROM user_certificate WHERE id = ?;`;
         var sql8 = `SELECT * FROM user_prize WHERE id = ?;`;
         var sql9 = `SELECT * FROM user_work_portfolio WHERE id = ?;`;
@@ -90,7 +90,7 @@ router.get('/', function(request, response) {
                 sql2_result.end_date = end_date;
 
                 var keywords = sql2_result.keywords;
-                if(keywords != "") {
+                if(keywords.length > 0) {
                     keywords = keywords.split(",");
                     sql2_result.keywords = keywords;
                 } else {
@@ -121,7 +121,7 @@ router.get('/', function(request, response) {
                 sql3_result.end_date = end_date;
 
                 var keywords = sql3_result.keywords;
-                if(keywords != "") {
+                if(keywords.length > 0) {
                     keywords = keywords.split(",");
                     sql3_result.keywords = keywords;
                 } else {
@@ -152,7 +152,7 @@ router.get('/', function(request, response) {
                     sql4_result[i].end_date = end_date;
 
                     var keywords = sql4_result[i].keywords;
-                    if(keywords != "") {
+                    if(keywords != null) {
                         keywords = keywords.split(",");
                         sql4_result[i].keywords = keywords;
                     } else {
@@ -184,7 +184,7 @@ router.get('/', function(request, response) {
                     sql5_result[i].end_date = end_date;
 
                     var keywords = sql5_result[i].keywords;
-                    if(keywords != "") {
+                    if(keywords != null) {
                         keywords = keywords.split(",");
                         sql5_result[i].keywords = keywords;
                     } else {
@@ -216,7 +216,7 @@ router.get('/', function(request, response) {
                     sql6_result[i].end_date = end_date;
 
                     var keywords = sql6_result[i].keywords;
-                    if(keywords != "") {
+                    if(keywords != null) {
                         keywords = keywords.split(",");
                         sql6_result[i].keywords = keywords;
                     } else {
