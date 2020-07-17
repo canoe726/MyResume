@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 var template = require('../lib/template.js');
 var myprofile_template = require('../lib/myprofile-template.js');
-var db = require('../lib/db');
+var db = require('../lib/db.js');
+var db_option = require('../lib/db_option.js');
+var session_option = require('../lib/session_option.js');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-var db_option = require('../lib/db_option');
 var MySQLStore = require('express-mysql-session')(session);
 var sessionStore = new MySQLStore(db_option);
-var session_option = require('../lib/session_option');
 
 router.use(cookieParser());
 router.use(session({

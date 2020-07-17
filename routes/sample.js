@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var template = require('../lib/template.js');
 var sample_template = require('../lib/sample-template.js');
-var db = require('../lib/db');
+var db = require('../lib/db.js');
 
 router.get('/', function(request, response) {
     var html = ``;
