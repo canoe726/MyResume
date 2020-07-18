@@ -20,7 +20,7 @@ router.use(cookieParser());
 router.use(session({
     secret: session_option,
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     store:sessionStore,
     cookie:{maxAge:1000*60*60*24}
 }));

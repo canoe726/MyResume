@@ -12,6 +12,14 @@
     font-weight: bolder;
 }
 
+.listfooter .container {
+    font-size: small;
+}
+
+.listfooter .col-6{
+    font-size: small;
+}
+
 .container {
     width: auto;
     position: relative;
@@ -82,18 +90,8 @@
 }
 
 .div-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.div-btn .col-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .add-btn {
@@ -114,6 +112,8 @@
 
 .content {
     font-size: 20px;
+    overflow:hidden;
+    word-break:break-all;
 }
 
 .emphasis {

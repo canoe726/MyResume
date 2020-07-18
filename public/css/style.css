@@ -79,6 +79,10 @@ header div {
     align-items: center;
 }
 
+.link {
+    font-size: medium;
+}
+
 .link:hover {
     transition: ease 0.8;
     color: lightsteelblue;
