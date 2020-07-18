@@ -21,27 +21,6 @@ router.use(session({
 
 router.get('/', function(request, response) {
     var html;
-
-    var get_session = `SELECT data FROM sessions WHERE session_id = ?`;
-    var s_param = request.session.id;
-    db.query(get_session, s_param, function(err, results, fields) {
-        if(err) {
-            console.log(err);
-        }
-        var data = results[0];
-        if(data !== undefined) {
-            data = data.data;
-            data = JSON.parse(data);
-
-            if(data.is_logined == true) {
-
-            }
-        } else {
-            console.log("로그인 X");
-        }
-    });
-
-
     if(request.session.is_logined == true) {
         var user_email = request.session.user_email;
         var sql = `SELECT id, nickname FROM user WHERE email = ?`;
