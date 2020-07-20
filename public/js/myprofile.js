@@ -2,6 +2,8 @@ String.prototype.replaceAll = function(org, dest) {
   return this.split(org).join(dest);
 }
 
+moment.lang('kr');
+
 window.onscroll = function() {
   scrollUpFunc();
 };
@@ -41,9 +43,9 @@ for(i=0; i<coll.length; i++) {
   });
 }
 
-var show_chart = document.querySelector('.experience-graph');
-if(show_chart.innerHTML !== '') {
-  var value = document.querySelector('#chart-value');
+var show_exp_chart = document.querySelector('.experience-graph');
+if(show_exp_chart.innerHTML !== '') {
+  var value = document.querySelector('#exp-chart-value');
   var input_value = value.value;
   input_value = input_value.replaceAll('\'','\"');
   var chart_value = JSON.parse(input_value);
@@ -97,8 +99,6 @@ if(show_chart.innerHTML !== '') {
       var b = Math.floor(Math.random() * 255);
       backgroundColors[i] = `rgba(${r}, ${g}, ${b}, 0.5)`;
   }
-
-  moment.lang('kr');
 
   var min_datetime = dates[0][0];
   for(var i=0; i<dates.length; i++) {
@@ -172,3 +172,38 @@ if(show_chart.innerHTML !== '') {
   });
 }
 
+var value = document.querySelector('#my-chart-value');
+var input_value = value.value;
+input_value = input_value.split(',');
+
+var datas = {
+    labels: ['직무경험', '해외경험', '자격증', '수상경험', '포트폴리오/작품', '논문/출판/특허'],
+    datasets: [{
+      label: "내 데이터",
+      backgroundColor: "rgba(255,127,0,0.5)",
+      borderWidth: 0.0,
+      pointRadius: 0.0,
+      data: input_value
+    }, {
+      label: "Student Example",
+      backgroundColor: "rgba(139,0,255,0.5)",
+      borderWidth: 0.0,
+      pointRadius: 0.0,
+      data: [1, 1, 1, 1, 1, 1]
+    }]
+};
+
+var ctx = document.getElementById('my-chart').getContext("2d");
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: datas,
+    options: {
+        scale: {
+            ticks: {
+                beginAtZero: true,
+                min: 0,
+                stepSize: 1,
+            },
+        },
+    }
+});
