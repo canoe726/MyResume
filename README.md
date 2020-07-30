@@ -1,5 +1,8 @@
 # MyResume
 
+### 0. 포트폴리오 웹 사이트 추가
+> URL : http://myresume.cafe24app.com/youngbaekim
+
 ### 1. MyResume 프로젝트
 > 내 이력서 간단 제작, 투두 리스트 작성 웹 사이트
 
