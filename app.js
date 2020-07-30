@@ -12,6 +12,8 @@ var loginRouter = require('./routes/login');
 var logoutRouter = require('./routes/logout');
 var registerRouter = require('./routes/register');
 
+var youngBaeKimRouter = require('./routes/youngbaekim');
+
 app.use(express.static('public'));
 
 app.use('/', indexRouter);
@@ -28,6 +30,8 @@ app.use('/sample', sampleRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/register', registerRouter);
+
+app.use('/youngbaekim', youngBaeKimRouter);
 
 app.use(function(request, response, next) {
     response.status(404).send("Sorry can't find that!");
